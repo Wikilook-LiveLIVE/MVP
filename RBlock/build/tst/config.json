@@ -1,0 +1,22 @@
+{
+  "HttpServerPort" : ":80",
+  "SiteLocation"  : "http://X.X.X.X:80",
+  "LogFileSize" : 10485760,
+  "LoggerConsole" : false,
+  "LogThreshold" : 68,
+
+  "EncGlobalPass":"",
+  "EncGlobalSalt":"",
+
+  "EmailHost": "smtp.gmail.com",
+  "EmailPort":":587",
+  "EmailUser":"",
+  "EmailPass":"",
+
+  "DBhost":"91.107.64.179",
+  "DBport" : 5434,
+  "DBuser" : "postgres",
+  "DBpass" : "testQweasd123",
+  "DBschema" : "rblock",
+  "DBmaxConn" : 4
+}

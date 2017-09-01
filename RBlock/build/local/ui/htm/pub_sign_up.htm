@@ -1,0 +1,56 @@
+<div class="rpage">
+
+    <div class="leftSideImg">
+        <img width="580" height="624" src="/ui/misc/img/left_side.png">
+    </div>
+    <div class="rightSideImg">
+        <img width="580" height="624" src="/ui/misc/img/right_side.png">
+    </div>
+
+<div class="inCenter">
+
+        <div class="whiteLogoImg">
+            <img width="60" height="50" src="/ui/misc/img/white_rblocklogo.png">
+        </div>
+
+        <div class="head">
+            <h2 class="signUp">R_Block</h2>
+            <p class="underH">A Blockchain referencing platform</p>
+        </div >
+        <serverErr></serverErr>
+
+        <div class="form-group" :class="{'has-error': errors.has('login')}">
+            <label>Login</label>
+            <input type="email" name="login" v-model="signUpModel.login" v-validate="'required|email'"
+                   class="form-control" placeholder="Enter your email address" maxlength="50">
+            <p class="text-danger" v-if="errors.has('login')">Invalid email</p>
+        </div>
+
+        <div class="form-group" :class="{'has-error': errors.has('password')}">
+            <label>Password</label>
+            <input type="password" name="password" v-model="signUpModel.password" v-validate="'required|min:6'"
+                   class="form-control" placeholder="Enter password" maxlength="40">
+            <p class="text-danger" v-if="errors.has('password')">Password is too short</p>
+        </div>
+
+    <div v-show="signUpModel.password !=''" class="form-group" :class="{'has-error': errors.has('confirmedPassword') && signUpModel.password != signUpModel.confirmPassword}">
+        <label>Password confirmation</label>
+        <input type="password" name="confirmedPassword" v-model="signUpModel.confirmedPassword" v-validate="'required|min:6'"
+               class="form-control" placeholder="Enter password" maxlength="40">
+        <p class="text-danger" v-if="errors.has('confirmedPassword')">Password is too short</p>
+        <p class="text-danger" v-if="signUpModel.password != signUpModel.confirmPassword" >Password does not match the password confirmation</p>
+    </div>
+
+        <p class="use">Use R_Block to supply references.
+            Giving prosepctive employers more confidence in you.
+            But maintaining complete ownership of your data.</p>
+        <div>
+            <button class="signUpBtn" type="submit">Sign Up</button>
+        </div>
+
+    </form>
+</div>
+
+</div>
+
+

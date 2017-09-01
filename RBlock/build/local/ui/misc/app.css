@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Aldrich-Regular";
+    src: url(/ui/misc/lib/fonts/Aldrich-Regular.ttf) format("truetype");
+}
+
+html{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+body{
+    -webkit-user-select:none;
+    width:100vw;
+    height:100vh;
+    min-width:1024px;
+    font-family:Aldrich-Regular,Helvetica,Arial,sans-serif;
+    font-size:12px;
+    color:#989A9C;
+    background:#191919;
+    letter-spacing:1px;
+    overflow:hidden;
+}
+
+.rpage{
+    -webkit-user-select:none;
+    width:100vw;
+    height:100vh;
+    min-width:1024px;
+    font-family:Aldrich-Regular,Helvetica,Arial,sans-serif;
+    font-size:12px;
+    color:#989A9C;
+    background:#191919;
+    letter-spacing:1px;
+    overflow:hidden;
+    position:relative;
+}
+
+div.leftSideImg{
+    position:absolute;
+    float:left;
+    left:0px;
+    bottom: 0px;
+}
+div.rightSideImg{
+    position:absolute;
+    float:right;
+    right:0px;
+    top: 0px;
+}
+
+div.whiteLogoImg {
+    position:relative;
+    float:none;
+    text-align:center;
+    margin-bottom: 150px;
+}
+
+.inCenter{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:350px;
+    padding-top:150px;
+    position:inherit;
+}
+
+.errorFormContainer {
+    padding-bottom: 5px;
+    color: #c9302c;
+    cursor:pointer;
+}
+
+.signUpBtn {
+    display: block;
+    color: white;
+    background-color: #2aabd2;
+    border: 2px solid #2aabd2;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:20px;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+.text-danger{
+    color:#c9302c;
+}
+label{
+    color:white;
+}
+h2.signUp{
+    color:#2aabd2;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+p.underH {
+    color:white;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+p.use{
+    color:white;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+div.head{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}

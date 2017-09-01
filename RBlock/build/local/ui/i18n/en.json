@@ -1,0 +1,18 @@
+{
+  "vocabulary": {
+
+
+
+
+
+  },
+
+  "error" : {
+    "ERR_METHOD_UNAVAILABLE": "Method unavailable",
+    "ERR_INVALID_REQUEST": "Invalid request",
+    "ERR_SECURITY_TOKEN_INVALID ": "Invalid security token",
+    "ERR_COMPANY_REGISTERED": "Company already registered!",
+    "ERR_COMPANY_NOT_ACTIVE": "Company Account not active!",
+    "ERR_COMPANY_NOT_FOUND": "Company Account not found!"
+  }
+}

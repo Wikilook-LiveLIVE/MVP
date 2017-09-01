@@ -1,0 +1,41 @@
+<div class="rpage">
+
+    <div class="leftSideImg">
+        <img width="580" height="624" src="/ui/misc/img/left_side.png">
+    </div>
+    <div class="rightSideImg">
+        <img width="580" height="624" src="/ui/misc/img/right_side.png">
+    </div>
+
+<div class="inCenter">
+
+    <form @submit.prevent="submitForm" v-show="$root.user.token == null">
+        <serverErr></serverErr>
+
+        <div class="form-group" :class="{'has-error': errors.has('login')}">
+            <label>Login</label>
+            <input type="text" name="login" v-model="signInModel.login" v-validate="'required|min:5'"
+                   class="form-control" placeholder="Enter login" maxlength="50">
+            <p class="text-danger" v-if="errors.has('login')">Invalid login</p>
+        </div>
+
+        <div class="form-group" :class="{'has-error': errors.has('password')}">
+            <label>Password</label>
+            <input type="password" name="password" v-model="signInModel.password" v-validate="'required|min:5'"
+                   class="form-control" placeholder="Enter password" maxlength="40">
+            <p class="text-danger" v-if="errors.has('password')">Password is too short</p>
+        </div>
+
+        <div>
+            <div class="pull-left">
+                <div><a href="#forgot-password" style="font-size: 12px;">Forgot your password?</a></div>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+        </div>
+
+    </form>
+</div>
+
+</div>
+
+

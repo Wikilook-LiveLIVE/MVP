@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>R_Block Referencing Platform</title>
+
+    <script type="text/javascript" src="/ui/misc/lib/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/ui/misc/lib/bootstrap/css/bootstrap.min.css?3.3.7"/>
+    <link rel="stylesheet" href="/ui/misc/lib/bootstrap/css/bootstrap-theme.min.css?3.3.7"/>
+    <script type="text/javascript" src="/ui/misc/lib/bootstrap/js/bootstrap.min.js?3.3.7"></script>
+    <script type="text/javascript" src="/ui/misc/lib/moment/moment.min.js?2.18.1"></script>
+    <!-- app specific -->
+    <link rel="stylesheet" href="/ui/misc/app.css"/>
+
+    <script data-main="/ui/misc/app" data-require="require.js@*"
+            src="/ui/misc/lib/require/require.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" type="image/png" href="/ui/misc/img/black_icon.png" />
+
+</head>
+
+<body>
+<div id="app">
+
+    <!--
+     Top panel
+   -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav topPanel" role="navigation">
+        <div class="topnav" style="margin-left:0px; background-color:#0f0f0f;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div style="float:left;">
+                    <a href="#/">
+                        <img style="float:left; margin-top:12px;" class="img-responsive" width="30" height="30" src="/ui/misc/img/white_icon.png">
+                    </a>
+                    <a style="color:white; float:left; margin-top:15px; margin-left:5px;" class="nav navbar-nav" href="#/"><h4 class="nav navbar-nav">R_Block Referencing Platform</h4></a>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" rowId="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#sign-up" v-show="$root.user.token==null" style="cursor:pointer; color:white; margin-right:20px;">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div>
+        <router-view></router-view>
+    </div>
+</div>
+</body>
+
+
+
+</html>
